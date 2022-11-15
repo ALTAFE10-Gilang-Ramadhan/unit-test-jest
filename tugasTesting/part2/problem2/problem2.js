@@ -1,10 +1,11 @@
 function faktorBilangan(bil) {
-  console.log(`Faktor dari ${bil} adalah:`);
+  let arr = [];
   for (let i = 0; i <= bil; i++) {
     if (bil % i == 0) {
-      console.log(i);
+      arr.push(i);
     }
   }
+  return arr;
 }
 
 module.exports = faktorBilangan;
